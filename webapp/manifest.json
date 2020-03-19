@@ -1,0 +1,57 @@
+{
+  "_version": "1.12.0",
+  "sap.app": {
+    "id": "de.exxcellent.angularlaunchpad",
+    "type": "application",
+    "title": "UI5 Launchpad for Angular",
+    "description": "Application ",
+    "applicationVersion": {
+      "version": "1.0.0"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "rootView": {
+      "viewName": "de.exxcellent.angularlaunchpad.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "app"
+    },
+    "dependencies": {
+      "minUI5Version": "1.60",
+      "libs": {
+        "sap.m": {}
+      }
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "viewPath": "de.exxcellent.angularlaunchpad.view",
+        "controlId": "app",
+        "controlAggregation": "pages",
+        "async": true
+      },
+      "routes": [
+        {
+          "pattern": "",
+          "name": "start",
+          "target": "start"
+        }
+      ],
+      "targets": {
+        "start": {
+          "viewId": "start",
+          "viewName": "Launchpad"
+        }
+      }
+    }
+  }
+}

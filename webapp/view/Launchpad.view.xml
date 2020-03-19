@@ -1,0 +1,23 @@
+<mvc:View
+        controllerName="de.exxcellent.angularlaunchpad.controller.Launchpad"
+        xmlns="sap.m"
+        xmlns:core="sap.ui.core"
+        xmlns:mvc="sap.ui.core.mvc"
+        xmlns:l="sap.ui.layout"
+        displayBlock="true">
+    <Page title="UI5-Launchpad for Angular">
+        <content>
+            <Panel headerText="Startseite" height="100%">
+                <l:VerticalLayout>
+                    <l:content>
+                        <Button text="Start Angular Application" press="startAngularApp"/>
+                        <Button text="Send message to Angular Application" press="sendByEventBus"/>
+                        <Label text="Message from Angular" />
+                        <Text text="{/text}" />
+                        <core:HTML id="angularDiv" />
+                    </l:content>
+                </l:VerticalLayout>
+            </Panel>
+        </content>
+    </Page>
+</mvc:View>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>UI5-school</title>
+    <script
+            id="sap-ui-bootstrap"
+            src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
+            data-sap-ui-theme="sap_fiori_3"
+            data-sap-ui-libs="sap.m"
+            data-sap-ui-compatVersion="edge"
+            data-sap-ui-async="true"
+            data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
+            data-sap-ui-preload=""
+            data-sap-ui-resourceroots='{
+			    "de.exxcellent.angularlaunchpad": "./webapp/",
+			    "assets": "../node_modules/"
+		    }'>
+
+    </script>
+
+    <script src="./webapp/lib/zone.js"></script>
+</head>
+<body class="sapUiBody" id="content">
+    <div data-sap-ui-component data-name="de.exxcellent.angularlaunchpad" data-id="container" data-settings='{"id" : "launchpad"}'></div>
+</body>
+</html>
